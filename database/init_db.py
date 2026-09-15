@@ -8,7 +8,7 @@ from database.models import (
     Base, Destination, Zone, POI, Hotel, Restaurant, TransportRoute,
     LocalTravelTime,
 )
-from database.session import engine, SessionLocal
+import database.session as db_session
 from data.seed_data import (
     DESTINATION, ZONES, POIS, HOTELS, RESTAURANTS, TRANSPORT_ROUTES,
     LOCAL_TRAVEL_TIMES,
@@ -16,6 +16,12 @@ from data.seed_data import (
 
 
 def reset_and_seed():
+    # Read engine/SessionLocal from the module (not via a top-level
+    # `from ... import`) so callers -- e.g. the test suite -- can swap in a
+    # different engine/session at runtime before calling this function.
+    engine = db_session.engine
+    SessionLocal = db_session.SessionLocal
+
     Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
 
