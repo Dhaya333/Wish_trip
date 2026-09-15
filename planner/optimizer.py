@@ -94,12 +94,13 @@ def build_day_plans(
     notes: List[str] = []
     pace_cfg = PACE_TARGETS[pace]
 
-    # hard party/accessibility filter up front
+    # hard party/accessibility filter up front -- mobility needs are a hard
+    # constraint where mandatory (Section 18.10), so this filter is never
+    # relaxed even if it leaves few or no candidates.
     filtered = [c for c in candidates if _party_ok(c.poi, traveller_type, mobility_need)]
     if not filtered:
         notes.append("No candidate activities passed party/accessibility constraints; "
                       "results will be sparse. Consider relaxing mobility or party filters.")
-        filtered = candidates  # fall back rather than returning nothing
 
     filtered.sort(key=lambda c: c.ml_score, reverse=True)
 
