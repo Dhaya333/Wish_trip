@@ -1,5 +1,5 @@
 """
-Trains the CatBoost hotel suitability model (Section 13).
+Trains the CatBoost hotel suitability model .
 
     Traveller type/party/budget/comfort + Hotel attributes + Context
         -> suitability score in [0, 100]
@@ -7,9 +7,9 @@ Trains the CatBoost hotel suitability model (Section 13).
 Usage:
     python -m ml.train_hotel_model
 
-Writes the trained model to models/hotel_model.cbm and prints holdout
-metrics (Section 34).
-"""
+Writes the trained model to models/hotel_model.cbm and prints holdout metrics """
+
+
 import numpy as np
 import pandas as pd
 from catboost import CatBoostRegressor, Pool

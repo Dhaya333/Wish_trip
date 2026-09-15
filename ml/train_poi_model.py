@@ -1,5 +1,5 @@
 """
-Trains the CatBoost POI suitability model (Section 11-12).
+Trains the CatBoost POI suitability model
 
     Traveller profile + Preference vector + POI attributes + Context
         -> suitability score in [0, 100]
@@ -7,8 +7,7 @@ Trains the CatBoost POI suitability model (Section 11-12).
 Usage:
     python -m ml.train_poi_model
 
-Writes the trained model to models/poi_model.cbm and prints holdout
-metrics (MAE, RMSE, R^2 -- Section 34).
+Writes the trained model to models/poi_model.cbm and prints holdout metrics.
 """
 import numpy as np
 import pandas as pd
