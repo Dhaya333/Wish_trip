@@ -1,0 +1,31 @@
+restaurant_id,name,zone_id,cuisine,meal_types,dietary_support,price_level,average_meal_cost,breakfast_support,lunch_support,dinner_support,opening_period,latitude,longitude
+R0001,Calangute Continental House 01,Z01,Continental,breakfast;lunch;dinner,veg_and_non_veg,high,1264,1,1,1,07:00-23:00,15.56689,73.75005
+R0002,Calangute North Indian House 02,Z01,North Indian,lunch,veg_and_non_veg,low,247,0,1,0,11:00-23:00,15.56301,73.75736
+R0003,Calangute Cafe House 03,Z01,Cafe,breakfast;lunch;dinner,veg_and_non_veg,low,337,1,1,1,07:00-23:00,15.53055,73.78401
+R0004,Baga Italian House 04,Z02,Italian,lunch;dinner,veg_and_non_veg,high,1399,0,1,1,11:00-23:00,15.52683,73.771
+R0005,Baga North Indian House 05,Z02,North Indian,lunch;dinner,veg_only,low,216,0,1,1,11:00-23:00,15.56205,73.73658
+R0006,Baga Cafe House 06,Z02,Cafe,breakfast;lunch;dinner,vegan_friendly,mid,425,1,1,1,07:00-23:00,15.55123,73.7514
+R0007,Anjuna Italian House 07,Z03,Italian,breakfast;lunch;dinner,veg_and_non_veg,low,189,1,1,1,07:00-23:00,15.57908,73.76399
+R0008,Anjuna South Indian House 08,Z03,South Indian,lunch;dinner,veg_and_non_veg,mid,391,0,1,1,11:00-23:00,15.56325,73.71822
+R0009,Anjuna Chinese House 09,Z03,Chinese,lunch;dinner,veg_and_non_veg,low,304,0,1,1,11:00-23:00,15.55812,73.73955
+R0010,Vagator Goan House 10,Z04,Goan,lunch;dinner,veg_and_non_veg,mid,741,0,1,1,11:00-23:00,15.58377,73.74716
+R0011,Vagator Italian House 11,Z04,Italian,lunch;dinner,veg_and_non_veg,low,155,0,1,1,11:00-23:00,15.55378,73.73883
+R0012,Vagator Cafe House 12,Z04,Cafe,breakfast;lunch;dinner,vegan_friendly,mid,749,1,1,1,07:00-23:00,15.59771,73.73602
+R0013,Candolim Goan House 13,Z05,Goan,breakfast;lunch;dinner,veg_and_non_veg,low,245,1,1,1,07:00-23:00,15.52119,73.75332
+R0014,Candolim Goan House 14,Z05,Goan,breakfast;lunch;dinner,vegan_friendly,mid,770,1,1,1,07:00-23:00,15.49897,73.78801
+R0015,Candolim Seafood House 15,Z05,Seafood,lunch,veg_and_non_veg,mid,632,0,1,0,11:00-23:00,15.53938,73.74931
+R0016,Panjim South Indian House 16,Z06,South Indian,lunch;dinner,veg_and_non_veg,mid,403,0,1,1,11:00-23:00,15.48385,73.8253
+R0017,Panjim North Indian House 17,Z06,North Indian,lunch;dinner,veg_only,high,1511,0,1,1,11:00-23:00,15.50709,73.80984
+R0018,Panjim Goan House 18,Z06,Goan,lunch,veg_only,high,1947,0,1,0,11:00-23:00,15.4829,73.84114
+R0019,Old Goa Italian House 19,Z07,Italian,breakfast;lunch;dinner,veg_and_non_veg,low,316,1,1,1,07:00-23:00,15.51522,73.92005
+R0020,Old Goa Italian House 20,Z07,Italian,breakfast;lunch;dinner,veg_and_non_veg,mid,642,1,1,1,07:00-23:00,15.50768,73.89624
+R0021,Old Goa South Indian House 21,Z07,South Indian,breakfast;lunch;dinner,veg_and_non_veg,low,301,1,1,1,07:00-23:00,15.50086,73.91055
+R0022,Margao Continental House 22,Z08,Continental,lunch;dinner,vegan_friendly,mid,716,0,1,1,11:00-23:00,15.29971,73.99633
+R0023,Margao South Indian House 23,Z08,South Indian,breakfast;lunch;dinner,veg_only,mid,586,1,1,1,07:00-23:00,15.29631,73.97147
+R0024,Margao South Indian House 24,Z08,South Indian,breakfast;lunch;dinner,veg_and_non_veg,high,2075,1,1,1,07:00-23:00,15.27465,73.97669
+R0025,Palolem Continental House 25,Z09,Continental,breakfast;lunch;dinner,veg_only,low,178,1,1,1,07:00-23:00,15.0217,74.03459
+R0026,Palolem Continental House 26,Z09,Continental,breakfast;lunch;dinner,jain_available,mid,449,1,1,1,07:00-23:00,15.00826,74.05093
+R0027,Palolem Goan House 27,Z09,Goan,lunch;dinner,veg_only,mid,624,0,1,1,11:00-23:00,14.99506,74.0307
+R0028,Colva Cafe House 28,Z10,Cafe,breakfast;lunch;dinner,jain_available,low,237,1,1,1,07:00-23:00,15.29544,73.92571
+R0029,Colva North Indian House 29,Z10,North Indian,lunch;dinner,veg_only,high,1841,0,1,1,11:00-23:00,15.29364,73.91467
+R0030,Colva Italian House 30,Z10,Italian,lunch;dinner,veg_and_non_veg,low,201,0,1,1,11:00-23:00,15.28089,73.91191

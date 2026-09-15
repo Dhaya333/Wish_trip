@@ -1,0 +1,11 @@
+zone_id,zone_name,region,latitude,longitude
+Z01,Calangute,North Goa,15.5449,73.7623
+Z02,Baga,North Goa,15.5553,73.7517
+Z03,Anjuna,North Goa,15.5736,73.7405
+Z04,Vagator,North Goa,15.5967,73.7343
+Z05,Candolim,North Goa,15.5185,73.7621
+Z06,Panjim,North Goa,15.4909,73.8278
+Z07,Old Goa,North Goa,15.5007,73.9114
+Z08,Margao,South Goa,15.2832,73.9862
+Z09,Palolem,South Goa,15.01,74.0233
+Z10,Colva,South Goa,15.279,73.917

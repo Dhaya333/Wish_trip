@@ -1,7 +1,7 @@
 """
-Curated + indicative seed data for the Goa V1 destination.
+Curated + indicative seed data for the "Goa"destination.
 
-IMPORTANT DATA HONESTY NOTE (see MASTER_PROJECT.md Sections 29-30):
+IMPORTANT DATA HONESTY NOTE :
 - Zone/POI identity, category, and approximate coordinates are based on
   well-known, publicly available facts about Goa.
 - Prices, exact opening hours (where not marked otherwise), transport

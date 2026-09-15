@@ -1,0 +1,721 @@
+poi_id,month,season,seasonal_suitability,morning_modifier,afternoon_modifier,evening_modifier,weather_risk_proxy,season_note,confidence
+POI0001,January,peak_winter,89,-3,0,9,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0001,February,peak_winter,96,0,7,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0001,March,summer_shoulder,84,15,-9,0,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0001,April,summer_shoulder,69,0,-4,1,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0001,May,summer_shoulder,71,0,-3,-13,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0001,June,monsoon,66,15,-6,9,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0001,July,monsoon,69,-3,-10,16,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0001,August,monsoon,81,-4,1,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0001,September,monsoon,71,-1,5,-10,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0001,October,post_monsoon,83,-10,-15,-3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0001,November,peak_winter,90,-12,-5,-11,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0001,December,peak_winter,82,-8,9,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0002,January,peak_winter,92,-8,-12,-4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0002,February,peak_winter,81,0,6,12,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0002,March,summer_shoulder,78,-5,-4,2,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0002,April,summer_shoulder,65,-1,11,-9,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0002,May,summer_shoulder,74,9,-16,0,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0002,June,monsoon,70,-4,-6,-7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0002,July,monsoon,76,5,0,-1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0002,August,monsoon,67,0,-12,2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0002,September,monsoon,66,0,-14,6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0002,October,post_monsoon,67,-10,-9,-3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0002,November,peak_winter,96,7,4,9,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0002,December,peak_winter,81,-8,-4,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0003,January,peak_winter,90,-2,3,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0003,February,peak_winter,81,1,12,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0003,March,summer_shoulder,69,4,-16,-3,low,Indicative summer shoulder suitability for photography POIs.,high
+POI0003,April,summer_shoulder,70,-6,-11,4,low,Indicative summer shoulder suitability for photography POIs.,high
+POI0003,May,summer_shoulder,83,10,-2,1,low,Indicative summer shoulder suitability for photography POIs.,high
+POI0003,June,monsoon,57,-16,-4,5,medium,Indicative monsoon suitability for photography POIs.,high
+POI0003,July,monsoon,53,16,4,11,medium,Indicative monsoon suitability for photography POIs.,high
+POI0003,August,monsoon,60,-7,-9,4,medium,Indicative monsoon suitability for photography POIs.,high
+POI0003,September,monsoon,66,4,-2,-3,medium,Indicative monsoon suitability for photography POIs.,high
+POI0003,October,post_monsoon,84,9,0,-8,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0003,November,peak_winter,89,2,7,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0003,December,peak_winter,95,6,1,-5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0004,January,peak_winter,81,8,9,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0004,February,peak_winter,97,11,8,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0004,March,summer_shoulder,76,13,0,1,low,Indicative summer shoulder suitability for food POIs.,high
+POI0004,April,summer_shoulder,77,-5,-2,-8,low,Indicative summer shoulder suitability for food POIs.,high
+POI0004,May,summer_shoulder,76,-7,-2,0,low,Indicative summer shoulder suitability for food POIs.,high
+POI0004,June,monsoon,61,-2,-11,3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0004,July,monsoon,84,11,-2,4,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0004,August,monsoon,75,6,4,-1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0004,September,monsoon,83,-14,3,21,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0004,October,post_monsoon,76,0,-17,9,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0004,November,peak_winter,94,-5,5,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0004,December,peak_winter,81,-3,-5,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0005,January,peak_winter,97,-8,-2,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0005,February,peak_winter,86,-1,-11,12,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0005,March,summer_shoulder,57,-3,-9,6,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0005,April,summer_shoulder,79,4,4,0,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0005,May,summer_shoulder,75,1,-18,20,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0005,June,monsoon,32,-11,-1,8,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0005,July,monsoon,39,-3,1,-7,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0005,August,monsoon,37,0,-9,0,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0005,September,monsoon,25,8,-7,11,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0005,October,post_monsoon,86,0,-7,2,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0005,November,peak_winter,80,-5,3,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0005,December,peak_winter,86,-12,-13,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0006,January,peak_winter,88,2,6,-5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0006,February,peak_winter,97,-11,13,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0006,March,summer_shoulder,60,-7,-9,-4,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0006,April,summer_shoulder,55,7,-11,13,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0006,May,summer_shoulder,61,-8,-8,-15,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0006,June,monsoon,33,0,-6,11,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0006,July,monsoon,28,9,1,15,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0006,August,monsoon,27,0,3,-6,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0006,September,monsoon,32,-6,-18,-3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0006,October,post_monsoon,75,0,-6,8,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0006,November,peak_winter,84,-17,10,12,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0006,December,peak_winter,92,-8,0,13,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0007,January,peak_winter,96,1,8,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0007,February,peak_winter,78,0,0,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0007,March,summer_shoulder,66,0,-4,-3,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0007,April,summer_shoulder,71,6,-12,3,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0007,May,summer_shoulder,73,2,-21,12,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0007,June,monsoon,38,-5,4,1,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0007,July,monsoon,27,15,-7,14,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0007,August,monsoon,47,0,-1,5,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0007,September,monsoon,42,-5,-12,0,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0007,October,post_monsoon,68,0,-1,10,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0007,November,peak_winter,81,-7,-5,-6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0007,December,peak_winter,79,16,2,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0008,January,peak_winter,89,0,4,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0008,February,peak_winter,86,8,18,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0008,March,summer_shoulder,85,-7,7,13,low,Indicative summer shoulder suitability for market POIs.,high
+POI0008,April,summer_shoulder,67,-1,-4,-1,low,Indicative summer shoulder suitability for market POIs.,high
+POI0008,May,summer_shoulder,67,-3,-7,9,low,Indicative summer shoulder suitability for market POIs.,high
+POI0008,June,monsoon,65,-1,-6,5,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0008,July,monsoon,78,13,0,11,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0008,August,monsoon,64,-1,-10,10,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0008,September,monsoon,82,-11,-7,4,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0008,October,post_monsoon,71,-4,11,8,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0008,November,peak_winter,79,2,0,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0008,December,peak_winter,87,0,0,-5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0009,January,peak_winter,85,-2,3,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0009,February,peak_winter,86,-4,3,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0009,March,summer_shoulder,84,-3,3,-8,low,Indicative summer shoulder suitability for wellness POIs.,high
+POI0009,April,summer_shoulder,73,0,7,-1,low,Indicative summer shoulder suitability for wellness POIs.,high
+POI0009,May,summer_shoulder,80,-10,8,4,low,Indicative summer shoulder suitability for wellness POIs.,high
+POI0009,June,monsoon,66,0,5,10,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0009,July,monsoon,63,-5,-1,0,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0009,August,monsoon,49,-16,-5,-6,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0009,September,monsoon,64,1,-12,0,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0009,October,post_monsoon,67,-15,-8,13,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0009,November,peak_winter,88,5,0,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0009,December,peak_winter,95,-7,16,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0010,January,peak_winter,94,11,-13,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0010,February,peak_winter,79,-5,0,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0010,March,summer_shoulder,65,3,-13,6,low,Indicative summer shoulder suitability for food POIs.,high
+POI0010,April,summer_shoulder,87,4,-5,5,low,Indicative summer shoulder suitability for food POIs.,high
+POI0010,May,summer_shoulder,80,0,0,7,low,Indicative summer shoulder suitability for food POIs.,high
+POI0010,June,monsoon,68,4,6,12,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0010,July,monsoon,79,-9,-9,3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0010,August,monsoon,75,2,-8,-2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0010,September,monsoon,79,-13,-6,-6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0010,October,post_monsoon,75,-8,-3,-5,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0010,November,peak_winter,83,5,-4,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0010,December,peak_winter,93,4,-5,-1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0011,January,peak_winter,90,7,4,12,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0011,February,peak_winter,95,-15,10,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0011,March,summer_shoulder,82,3,-4,2,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0011,April,summer_shoulder,69,2,-7,11,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0011,May,summer_shoulder,79,-4,11,0,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0011,June,monsoon,74,-1,-12,7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0011,July,monsoon,79,-1,1,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0011,August,monsoon,82,6,1,13,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0011,September,monsoon,74,25,3,7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0011,October,post_monsoon,68,-7,0,16,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0011,November,peak_winter,81,11,6,-5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0011,December,peak_winter,82,3,-9,-6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0012,January,peak_winter,79,4,7,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0012,February,peak_winter,93,4,-7,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0012,March,summer_shoulder,83,-16,0,-1,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0012,April,summer_shoulder,87,6,3,0,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0012,May,summer_shoulder,67,-5,-19,5,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0012,June,monsoon,61,-3,-8,20,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0012,July,monsoon,72,3,-12,12,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0012,August,monsoon,68,2,-1,-2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0012,September,monsoon,74,7,9,8,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0012,October,post_monsoon,69,-7,2,24,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0012,November,peak_winter,97,11,-5,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0012,December,peak_winter,85,4,3,-1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0013,January,peak_winter,83,7,9,17,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0013,February,peak_winter,94,14,1,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0013,March,summer_shoulder,73,5,-12,-3,low,Indicative summer shoulder suitability for fort POIs.,high
+POI0013,April,summer_shoulder,81,3,-6,4,low,Indicative summer shoulder suitability for fort POIs.,high
+POI0013,May,summer_shoulder,73,6,5,-10,low,Indicative summer shoulder suitability for fort POIs.,high
+POI0013,June,monsoon,80,2,0,-7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0013,July,monsoon,78,-6,-4,18,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0013,August,monsoon,73,16,-11,9,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0013,September,monsoon,75,3,-1,7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0013,October,post_monsoon,77,13,8,-3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0013,November,peak_winter,78,7,2,14,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0013,December,peak_winter,80,1,1,5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0014,January,peak_winter,91,0,-5,-4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0014,February,peak_winter,79,11,4,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0014,March,summer_shoulder,86,2,2,-1,low,Indicative summer shoulder suitability for wellness POIs.,high
+POI0014,April,summer_shoulder,69,0,1,-10,low,Indicative summer shoulder suitability for wellness POIs.,high
+POI0014,May,summer_shoulder,65,-3,-6,0,low,Indicative summer shoulder suitability for wellness POIs.,high
+POI0014,June,monsoon,67,1,10,2,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0014,July,monsoon,67,15,-9,19,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0014,August,monsoon,61,0,9,11,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0014,September,monsoon,50,0,-9,5,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0014,October,post_monsoon,65,7,0,2,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0014,November,peak_winter,87,7,9,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0014,December,peak_winter,86,-5,3,17,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0015,January,peak_winter,85,-10,-2,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0015,February,peak_winter,80,-2,12,-6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0015,March,summer_shoulder,71,-5,-11,7,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0015,April,summer_shoulder,70,4,-1,14,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0015,May,summer_shoulder,81,9,-7,10,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0015,June,monsoon,68,-10,-4,6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0015,July,monsoon,65,-12,-4,-3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0015,August,monsoon,75,4,1,15,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0015,September,monsoon,61,7,5,-8,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0015,October,post_monsoon,77,4,7,2,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0015,November,peak_winter,97,7,-9,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0015,December,peak_winter,79,0,5,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0016,January,peak_winter,84,0,8,23,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0016,February,peak_winter,91,-12,2,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0016,March,summer_shoulder,73,-7,-10,0,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0016,April,summer_shoulder,61,0,-2,8,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0016,May,summer_shoulder,72,-10,0,4,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0016,June,monsoon,37,9,-10,-7,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0016,July,monsoon,43,10,-3,3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0016,August,monsoon,43,-6,9,-3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0016,September,monsoon,30,4,-19,15,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0016,October,post_monsoon,78,4,7,9,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0016,November,peak_winter,89,-8,-1,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0016,December,peak_winter,78,3,6,16,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0017,January,peak_winter,97,7,-2,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0017,February,peak_winter,88,3,-3,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0017,March,summer_shoulder,75,-7,0,12,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0017,April,summer_shoulder,78,-7,0,0,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0017,May,summer_shoulder,75,11,1,11,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0017,June,monsoon,75,15,-10,-2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0017,July,monsoon,66,-2,-23,3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0017,August,monsoon,67,-4,1,7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0017,September,monsoon,62,4,0,-1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0017,October,post_monsoon,66,-3,-17,-3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0017,November,peak_winter,86,0,-7,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0017,December,peak_winter,91,-9,1,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0018,January,peak_winter,90,0,-12,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0018,February,peak_winter,93,-3,-3,5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0018,March,summer_shoulder,68,6,-12,10,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0018,April,summer_shoulder,75,5,-11,11,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0018,May,summer_shoulder,68,-11,-1,6,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0018,June,monsoon,63,-1,-5,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0018,July,monsoon,84,0,-3,7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0018,August,monsoon,77,-9,-12,-12,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0018,September,monsoon,77,-9,-3,7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0018,October,post_monsoon,73,4,-9,4,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0018,November,peak_winter,85,13,7,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0018,December,peak_winter,85,-8,5,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0019,January,peak_winter,93,-5,-1,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0019,February,peak_winter,79,1,3,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0019,March,summer_shoulder,77,12,14,8,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0019,April,summer_shoulder,84,-10,-11,9,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0019,May,summer_shoulder,66,-9,-5,6,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0019,June,monsoon,62,6,-7,-7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0019,July,monsoon,79,8,-5,8,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0019,August,monsoon,61,-3,-11,13,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0019,September,monsoon,70,3,7,-3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0019,October,post_monsoon,69,-4,1,0,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0019,November,peak_winter,84,-1,-7,5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0019,December,peak_winter,79,1,7,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0020,January,peak_winter,84,2,-1,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0020,February,peak_winter,83,2,-2,18,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0020,March,summer_shoulder,77,5,-1,4,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0020,April,summer_shoulder,70,-10,-6,5,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0020,May,summer_shoulder,62,3,2,0,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0020,June,monsoon,47,-5,6,11,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0020,July,monsoon,30,0,-5,5,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0020,August,monsoon,25,3,15,6,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0020,September,monsoon,43,-13,-8,14,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0020,October,post_monsoon,76,3,-25,10,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0020,November,peak_winter,96,-15,12,-17,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0020,December,peak_winter,85,7,0,-13,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0021,January,peak_winter,97,9,2,9,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0021,February,peak_winter,88,-3,-14,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0021,March,summer_shoulder,64,9,-20,-7,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0021,April,summer_shoulder,79,-6,-17,5,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0021,May,summer_shoulder,79,-11,1,9,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0021,June,monsoon,45,-4,-6,-10,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0021,July,monsoon,47,0,-3,8,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0021,August,monsoon,44,1,-7,7,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0021,September,monsoon,44,0,-2,3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0021,October,post_monsoon,78,-5,4,0,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0021,November,peak_winter,85,0,-2,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0021,December,peak_winter,79,-4,-13,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0022,January,peak_winter,90,6,-4,20,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0022,February,peak_winter,93,-3,-7,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0022,March,summer_shoulder,76,12,5,9,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0022,April,summer_shoulder,81,-7,9,2,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0022,May,summer_shoulder,76,11,0,22,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0022,June,monsoon,79,1,-8,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0022,July,monsoon,82,-2,4,9,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0022,August,monsoon,81,0,-12,6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0022,September,monsoon,76,3,-3,-1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0022,October,post_monsoon,78,6,-25,8,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0022,November,peak_winter,91,-12,-1,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0022,December,peak_winter,97,-3,8,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0023,January,peak_winter,91,6,0,25,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0023,February,peak_winter,88,1,1,-8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0023,March,summer_shoulder,79,9,-15,-12,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0023,April,summer_shoulder,71,0,5,5,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0023,May,summer_shoulder,68,-14,-1,10,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0023,June,monsoon,32,-14,4,11,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0023,July,monsoon,25,4,0,9,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0023,August,monsoon,42,6,-19,-7,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0023,September,monsoon,34,-1,-1,7,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0023,October,post_monsoon,65,8,9,-1,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0023,November,peak_winter,84,-6,-1,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0023,December,peak_winter,88,-25,19,9,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0024,January,peak_winter,97,15,-2,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0024,February,peak_winter,79,-3,13,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0024,March,summer_shoulder,68,9,0,4,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0024,April,summer_shoulder,70,8,15,7,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0024,May,summer_shoulder,68,1,5,0,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0024,June,monsoon,31,-2,-17,-4,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0024,July,monsoon,38,0,9,9,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0024,August,monsoon,36,-7,-10,15,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0024,September,monsoon,43,0,-8,13,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0024,October,post_monsoon,83,-7,3,23,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0024,November,peak_winter,82,-6,3,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0024,December,peak_winter,89,-11,5,13,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0025,January,peak_winter,93,-3,-7,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0025,February,peak_winter,80,-4,-8,20,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0025,March,summer_shoulder,74,4,2,11,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0025,April,summer_shoulder,71,-3,-2,2,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0025,May,summer_shoulder,75,2,-8,-5,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0025,June,monsoon,38,1,-6,-10,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0025,July,monsoon,28,7,15,1,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0025,August,monsoon,32,-4,-13,6,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0025,September,monsoon,32,-6,-6,-10,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0025,October,post_monsoon,73,7,-6,4,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0025,November,peak_winter,85,-4,-2,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0025,December,peak_winter,84,3,11,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0026,January,peak_winter,90,11,4,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0026,February,peak_winter,91,8,8,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0026,March,summer_shoulder,76,-6,-7,11,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0026,April,summer_shoulder,80,0,4,15,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0026,May,summer_shoulder,66,9,-13,8,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0026,June,monsoon,81,-4,-18,2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0026,July,monsoon,84,3,11,6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0026,August,monsoon,81,19,-3,5,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0026,September,monsoon,73,8,-9,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0026,October,post_monsoon,67,10,9,14,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0026,November,peak_winter,88,0,0,11,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0026,December,peak_winter,95,12,2,20,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0027,January,peak_winter,89,-1,6,18,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0027,February,peak_winter,96,15,9,5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0027,March,summer_shoulder,75,4,8,8,low,Indicative summer shoulder suitability for photography POIs.,high
+POI0027,April,summer_shoulder,85,3,-4,2,low,Indicative summer shoulder suitability for photography POIs.,high
+POI0027,May,summer_shoulder,83,-4,-6,6,low,Indicative summer shoulder suitability for photography POIs.,high
+POI0027,June,monsoon,69,13,-6,5,medium,Indicative monsoon suitability for photography POIs.,high
+POI0027,July,monsoon,62,5,5,17,medium,Indicative monsoon suitability for photography POIs.,high
+POI0027,August,monsoon,55,1,0,3,medium,Indicative monsoon suitability for photography POIs.,high
+POI0027,September,monsoon,61,2,-4,6,medium,Indicative monsoon suitability for photography POIs.,high
+POI0027,October,post_monsoon,78,3,-2,3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0027,November,peak_winter,94,21,-9,-5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0027,December,peak_winter,84,-7,0,12,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0028,January,peak_winter,79,1,4,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0028,February,peak_winter,79,-1,0,-7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0028,March,summer_shoulder,85,-8,1,6,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0028,April,summer_shoulder,66,4,-19,-6,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0028,May,summer_shoulder,80,-22,4,-9,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0028,June,monsoon,80,6,-12,13,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0028,July,monsoon,61,-18,0,-9,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0028,August,monsoon,75,3,-6,6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0028,September,monsoon,73,6,-16,14,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0028,October,post_monsoon,77,-3,-11,17,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0028,November,peak_winter,78,15,9,-1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0028,December,peak_winter,80,0,0,17,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0029,January,peak_winter,89,1,-1,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0029,February,peak_winter,86,10,0,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0029,March,summer_shoulder,67,-4,-16,-1,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0029,April,summer_shoulder,64,11,-6,10,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0029,May,summer_shoulder,55,4,-6,1,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0029,June,monsoon,27,1,-8,-11,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0029,July,monsoon,31,1,-7,-2,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0029,August,monsoon,48,-11,-3,17,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0029,September,monsoon,36,-11,-3,4,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0029,October,post_monsoon,79,6,4,-18,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0029,November,peak_winter,93,-8,-11,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0029,December,peak_winter,94,3,-13,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0030,January,peak_winter,88,0,-6,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0030,February,peak_winter,78,8,-12,13,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0030,March,summer_shoulder,61,0,-18,3,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0030,April,summer_shoulder,77,4,-15,8,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0030,May,summer_shoulder,69,-5,1,-12,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0030,June,monsoon,34,2,7,16,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0030,July,monsoon,49,-2,-10,2,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0030,August,monsoon,35,4,-11,11,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0030,September,monsoon,25,0,-15,-5,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0030,October,post_monsoon,81,6,0,12,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0030,November,peak_winter,88,6,-1,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0030,December,peak_winter,87,-3,-9,20,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0031,January,peak_winter,79,5,-4,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0031,February,peak_winter,88,-1,8,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0031,March,summer_shoulder,68,1,-1,18,low,Indicative summer shoulder suitability for fort POIs.,high
+POI0031,April,summer_shoulder,84,2,0,10,low,Indicative summer shoulder suitability for fort POIs.,high
+POI0031,May,summer_shoulder,73,-7,-13,-5,low,Indicative summer shoulder suitability for fort POIs.,high
+POI0031,June,monsoon,64,6,-2,5,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0031,July,monsoon,76,16,-12,21,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0031,August,monsoon,62,-11,-11,-12,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0031,September,monsoon,84,-8,-13,-5,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0031,October,post_monsoon,83,6,5,19,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0031,November,peak_winter,87,1,-10,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0031,December,peak_winter,89,-4,3,13,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0032,January,peak_winter,83,-6,7,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0032,February,peak_winter,96,-2,-5,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0032,March,summer_shoulder,72,2,-3,2,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0032,April,summer_shoulder,73,19,5,0,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0032,May,summer_shoulder,67,-1,-3,0,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0032,June,monsoon,82,3,6,-5,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0032,July,monsoon,63,-3,-8,20,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0032,August,monsoon,80,8,2,2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0032,September,monsoon,61,-11,1,8,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0032,October,post_monsoon,65,10,-1,3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0032,November,peak_winter,93,7,-11,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0032,December,peak_winter,85,0,-8,-11,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0033,January,peak_winter,85,11,13,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0033,February,peak_winter,95,15,0,12,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0033,March,summer_shoulder,62,-4,-10,-11,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0033,April,summer_shoulder,75,10,-10,-1,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0033,May,summer_shoulder,76,-1,9,21,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0033,June,monsoon,27,-13,-7,-3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0033,July,monsoon,26,2,-10,5,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0033,August,monsoon,48,-3,7,9,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0033,September,monsoon,41,-21,-5,21,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0033,October,post_monsoon,78,10,-14,2,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0033,November,peak_winter,94,13,1,-1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0033,December,peak_winter,94,0,-20,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0034,January,peak_winter,95,6,-15,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0034,February,peak_winter,85,8,-11,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0034,March,summer_shoulder,67,13,-6,3,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0034,April,summer_shoulder,85,6,-15,3,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0034,May,summer_shoulder,79,-1,1,9,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0034,June,monsoon,82,-5,-3,16,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0034,July,monsoon,74,1,-6,4,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0034,August,monsoon,68,-13,6,-1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0034,September,monsoon,65,-4,-10,14,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0034,October,post_monsoon,69,7,1,11,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0034,November,peak_winter,85,0,-5,12,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0034,December,peak_winter,83,-5,11,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0035,January,peak_winter,86,6,0,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0035,February,peak_winter,93,0,7,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0035,March,summer_shoulder,74,0,1,4,low,Indicative summer shoulder suitability for market POIs.,high
+POI0035,April,summer_shoulder,68,14,-6,3,low,Indicative summer shoulder suitability for market POIs.,high
+POI0035,May,summer_shoulder,75,-10,-13,0,low,Indicative summer shoulder suitability for market POIs.,high
+POI0035,June,monsoon,63,9,-5,1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0035,July,monsoon,63,12,5,-1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0035,August,monsoon,64,-3,9,6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0035,September,monsoon,69,5,3,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0035,October,post_monsoon,82,1,7,-4,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0035,November,peak_winter,80,-8,-7,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0035,December,peak_winter,95,3,-2,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0036,January,peak_winter,96,-9,3,14,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0036,February,peak_winter,78,0,-1,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0036,March,summer_shoulder,72,4,19,4,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0036,April,summer_shoulder,67,0,0,18,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0036,May,summer_shoulder,70,-17,0,25,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0036,June,monsoon,74,4,-14,7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0036,July,monsoon,66,9,-12,5,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0036,August,monsoon,77,-6,-9,16,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0036,September,monsoon,70,-4,-14,-9,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0036,October,post_monsoon,71,-10,0,12,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0036,November,peak_winter,96,12,-5,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0036,December,peak_winter,82,-8,7,21,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0037,January,peak_winter,93,-2,10,-6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0037,February,peak_winter,95,4,9,5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0037,March,summer_shoulder,70,14,10,4,low,Indicative summer shoulder suitability for market POIs.,high
+POI0037,April,summer_shoulder,74,-4,-12,12,low,Indicative summer shoulder suitability for market POIs.,high
+POI0037,May,summer_shoulder,65,-2,-4,0,low,Indicative summer shoulder suitability for market POIs.,high
+POI0037,June,monsoon,84,2,15,4,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0037,July,monsoon,76,8,-3,16,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0037,August,monsoon,76,1,-6,-9,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0037,September,monsoon,64,-14,-1,-5,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0037,October,post_monsoon,73,10,0,3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0037,November,peak_winter,81,4,-6,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0037,December,peak_winter,78,9,2,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0038,January,peak_winter,93,0,3,-1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0038,February,peak_winter,81,16,-4,17,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0038,March,summer_shoulder,63,6,0,14,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0038,April,summer_shoulder,62,-6,3,19,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0038,May,summer_shoulder,61,0,-9,2,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0038,June,monsoon,25,13,-13,-2,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0038,July,monsoon,37,4,11,1,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0038,August,monsoon,36,1,-10,6,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0038,September,monsoon,29,5,-2,4,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0038,October,post_monsoon,70,-3,-7,10,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0038,November,peak_winter,78,4,16,16,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0038,December,peak_winter,92,-12,-4,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0039,January,peak_winter,80,-11,3,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0039,February,peak_winter,85,15,-2,14,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0039,March,summer_shoulder,67,-8,0,13,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0039,April,summer_shoulder,67,-7,-4,-6,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0039,May,summer_shoulder,82,6,-8,3,low,Indicative summer shoulder suitability for nightlife POIs.,high
+POI0039,June,monsoon,82,-9,-10,19,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0039,July,monsoon,83,-8,-7,-7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0039,August,monsoon,78,-8,5,3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0039,September,monsoon,68,0,-5,10,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0039,October,post_monsoon,76,-21,1,4,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0039,November,peak_winter,92,7,-9,14,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0039,December,peak_winter,91,-2,-7,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0040,January,peak_winter,89,12,2,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0040,February,peak_winter,78,7,8,11,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0040,March,summer_shoulder,67,4,-3,14,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0040,April,summer_shoulder,70,0,-4,18,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0040,May,summer_shoulder,69,0,-8,16,low,Indicative summer shoulder suitability for shopping POIs.,high
+POI0040,June,monsoon,84,6,-2,2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0040,July,monsoon,68,0,-10,6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0040,August,monsoon,66,2,-8,12,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0040,September,monsoon,69,7,-7,11,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0040,October,post_monsoon,69,0,-9,10,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0040,November,peak_winter,87,20,11,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0040,December,peak_winter,83,1,1,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0041,January,peak_winter,89,-6,0,-11,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0041,February,peak_winter,82,-4,-1,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0041,March,summer_shoulder,59,-2,8,10,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0041,April,summer_shoulder,62,-4,-5,4,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0041,May,summer_shoulder,58,-6,3,1,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0041,June,monsoon,39,-8,-5,5,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0041,July,monsoon,45,0,1,8,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0041,August,monsoon,46,17,5,16,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0041,September,monsoon,25,6,-3,12,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0041,October,post_monsoon,73,-4,0,0,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0041,November,peak_winter,97,-5,-5,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0041,December,peak_winter,95,-1,-15,-6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0042,January,peak_winter,88,-7,3,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0042,February,peak_winter,82,8,6,13,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0042,March,summer_shoulder,82,1,3,12,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0042,April,summer_shoulder,66,3,5,-13,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0042,May,summer_shoulder,76,-2,4,17,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0042,June,monsoon,78,-11,6,-4,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0042,July,monsoon,82,-1,-7,-7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0042,August,monsoon,72,5,0,13,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0042,September,monsoon,82,0,-5,18,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0042,October,post_monsoon,72,-22,-7,5,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0042,November,peak_winter,85,-2,-1,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0042,December,peak_winter,86,0,5,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0043,January,peak_winter,84,-1,0,-8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0043,February,peak_winter,78,3,-3,15,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0043,March,summer_shoulder,60,9,-13,2,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0043,April,summer_shoulder,74,-9,-10,15,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0043,May,summer_shoulder,62,-9,-8,4,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0043,June,monsoon,39,4,-19,-7,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0043,July,monsoon,27,-15,-8,6,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0043,August,monsoon,38,3,-6,2,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0043,September,monsoon,37,2,-10,5,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0043,October,post_monsoon,75,3,13,11,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0043,November,peak_winter,83,-4,-4,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0043,December,peak_winter,89,-1,-8,15,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0044,January,peak_winter,87,-2,5,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0044,February,peak_winter,94,5,-10,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0044,March,summer_shoulder,68,4,-10,-14,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0044,April,summer_shoulder,64,-8,-5,5,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0044,May,summer_shoulder,69,4,-4,4,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0044,June,monsoon,40,8,-9,3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0044,July,monsoon,31,11,-1,0,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0044,August,monsoon,46,0,0,2,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0044,September,monsoon,49,-5,-2,2,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0044,October,post_monsoon,69,-3,-10,5,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0044,November,peak_winter,78,-2,1,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0044,December,peak_winter,95,5,4,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0045,January,peak_winter,90,-8,-4,5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0045,February,peak_winter,83,-6,0,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0045,March,summer_shoulder,67,6,-8,-1,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0045,April,summer_shoulder,67,-8,-1,15,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0045,May,summer_shoulder,73,-1,3,-9,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0045,June,monsoon,73,15,14,-16,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0045,July,monsoon,63,-5,-7,1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0045,August,monsoon,66,6,-5,-2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0045,September,monsoon,82,4,-14,-8,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0045,October,post_monsoon,85,15,-5,3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0045,November,peak_winter,79,4,14,9,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0045,December,peak_winter,86,-12,-11,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0046,January,peak_winter,84,-13,6,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0046,February,peak_winter,80,11,14,3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0046,March,summer_shoulder,84,-9,0,1,low,Indicative summer shoulder suitability for fort POIs.,high
+POI0046,April,summer_shoulder,85,-8,-7,1,low,Indicative summer shoulder suitability for fort POIs.,high
+POI0046,May,summer_shoulder,76,7,-11,18,low,Indicative summer shoulder suitability for fort POIs.,high
+POI0046,June,monsoon,76,-10,7,-3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0046,July,monsoon,70,-3,-7,11,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0046,August,monsoon,72,11,4,1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0046,September,monsoon,72,-6,-12,-4,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0046,October,post_monsoon,74,-3,1,-10,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0046,November,peak_winter,86,12,8,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0046,December,peak_winter,90,-11,3,-13,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0047,January,peak_winter,94,-1,14,-8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0047,February,peak_winter,96,7,0,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0047,March,summer_shoulder,84,4,0,19,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0047,April,summer_shoulder,72,8,-9,-3,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0047,May,summer_shoulder,75,11,-11,16,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0047,June,monsoon,78,4,-2,2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0047,July,monsoon,77,0,-7,10,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0047,August,monsoon,74,-1,-11,9,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0047,September,monsoon,68,3,-8,-4,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0047,October,post_monsoon,70,13,12,12,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0047,November,peak_winter,83,-2,11,2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0047,December,peak_winter,91,-5,14,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0048,January,peak_winter,83,-11,4,21,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0048,February,peak_winter,92,0,-2,-4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0048,March,summer_shoulder,86,-6,-5,-4,low,Indicative summer shoulder suitability for market POIs.,high
+POI0048,April,summer_shoulder,81,12,4,4,low,Indicative summer shoulder suitability for market POIs.,high
+POI0048,May,summer_shoulder,74,12,-7,-3,low,Indicative summer shoulder suitability for market POIs.,high
+POI0048,June,monsoon,77,-14,-10,-6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0048,July,monsoon,68,5,-8,7,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0048,August,monsoon,64,-5,-4,20,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0048,September,monsoon,80,3,-17,17,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0048,October,post_monsoon,78,-3,8,4,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0048,November,peak_winter,92,5,-3,13,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0048,December,peak_winter,94,-6,6,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0049,January,peak_winter,85,-3,0,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0049,February,peak_winter,93,1,0,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0049,March,summer_shoulder,86,1,-9,3,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0049,April,summer_shoulder,67,-8,13,13,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0049,May,summer_shoulder,77,9,-20,-15,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0049,June,monsoon,69,-3,-16,3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0049,July,monsoon,60,7,-14,8,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0049,August,monsoon,82,0,-2,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0049,September,monsoon,82,0,9,-1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0049,October,post_monsoon,87,5,0,2,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0049,November,peak_winter,88,-2,-21,-19,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0049,December,peak_winter,78,10,9,20,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0050,January,peak_winter,79,-10,-3,5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0050,February,peak_winter,83,-8,13,22,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0050,March,summer_shoulder,68,0,-15,17,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0050,April,summer_shoulder,59,0,-7,8,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0050,May,summer_shoulder,55,1,-16,13,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0050,June,monsoon,29,0,4,3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0050,July,monsoon,37,-9,1,-2,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0050,August,monsoon,32,-3,-4,5,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0050,September,monsoon,32,-1,1,1,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0050,October,post_monsoon,84,-1,1,3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0050,November,peak_winter,80,0,7,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0050,December,peak_winter,79,-2,-11,12,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0051,January,peak_winter,79,-6,0,-4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0051,February,peak_winter,91,-8,-11,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0051,March,summer_shoulder,74,-5,-1,-1,low,Indicative summer shoulder suitability for wellness POIs.,high
+POI0051,April,summer_shoulder,67,6,-13,5,low,Indicative summer shoulder suitability for wellness POIs.,high
+POI0051,May,summer_shoulder,81,18,0,0,low,Indicative summer shoulder suitability for wellness POIs.,high
+POI0051,June,monsoon,63,5,12,-8,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0051,July,monsoon,58,-1,-8,2,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0051,August,monsoon,65,-10,6,-6,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0051,September,monsoon,64,8,-5,-2,medium,Indicative monsoon suitability for wellness POIs.,high
+POI0051,October,post_monsoon,65,-10,-1,-1,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0051,November,peak_winter,97,-11,6,5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0051,December,peak_winter,90,1,11,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0052,January,peak_winter,79,-4,-1,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0052,February,peak_winter,88,-6,-16,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0052,March,summer_shoulder,74,1,4,20,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0052,April,summer_shoulder,64,6,6,11,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0052,May,summer_shoulder,75,14,2,10,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0052,June,monsoon,36,-1,-5,2,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0052,July,monsoon,25,-5,-6,-13,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0052,August,monsoon,32,13,-6,8,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0052,September,monsoon,33,2,6,-4,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0052,October,post_monsoon,81,19,8,6,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0052,November,peak_winter,85,-9,-2,16,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0052,December,peak_winter,92,-14,4,9,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0053,January,peak_winter,80,-12,12,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0053,February,peak_winter,92,-3,-9,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0053,March,summer_shoulder,68,-8,0,0,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0053,April,summer_shoulder,78,-9,-9,7,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0053,May,summer_shoulder,75,0,0,13,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0053,June,monsoon,60,-2,-13,5,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0053,July,monsoon,69,-11,-12,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0053,August,monsoon,62,-1,-11,10,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0053,September,monsoon,69,-12,-7,3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0053,October,post_monsoon,73,-11,-4,1,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0053,November,peak_winter,85,1,-5,16,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0053,December,peak_winter,88,3,-6,5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0054,January,peak_winter,86,9,-4,11,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0054,February,peak_winter,95,0,11,15,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0054,March,summer_shoulder,87,-2,0,3,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0054,April,summer_shoulder,74,13,-4,1,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0054,May,summer_shoulder,86,-9,0,-1,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0054,June,monsoon,76,8,-15,6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0054,July,monsoon,64,-17,11,1,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0054,August,monsoon,64,1,0,10,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0054,September,monsoon,78,7,0,19,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0054,October,post_monsoon,65,4,15,12,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0054,November,peak_winter,90,20,-4,16,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0054,December,peak_winter,85,0,8,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0055,January,peak_winter,97,-2,12,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0055,February,peak_winter,89,7,-17,4,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0055,March,summer_shoulder,65,1,2,2,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0055,April,summer_shoulder,69,0,4,-13,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0055,May,summer_shoulder,80,-2,-12,7,low,Indicative summer shoulder suitability for museum POIs.,high
+POI0055,June,monsoon,73,9,3,3,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0055,July,monsoon,72,6,-5,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0055,August,monsoon,80,-5,1,4,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0055,September,monsoon,69,-13,1,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0055,October,post_monsoon,85,2,9,-5,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0055,November,peak_winter,82,-1,3,14,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0055,December,peak_winter,93,-10,4,13,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0056,January,peak_winter,92,-1,3,7,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0056,February,peak_winter,81,4,4,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0056,March,summer_shoulder,76,9,-3,-6,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0056,April,summer_shoulder,59,0,-3,-4,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0056,May,summer_shoulder,71,-11,0,6,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0056,June,monsoon,42,-13,-2,4,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0056,July,monsoon,48,-3,-11,-1,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0056,August,monsoon,36,-4,-4,6,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0056,September,monsoon,30,-3,-7,25,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0056,October,post_monsoon,73,-6,-4,25,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0056,November,peak_winter,78,-11,6,-2,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0056,December,peak_winter,97,7,-1,1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0057,January,peak_winter,94,4,7,8,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0057,February,peak_winter,92,-3,4,14,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0057,March,summer_shoulder,57,14,1,6,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0057,April,summer_shoulder,77,2,-3,-5,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0057,May,summer_shoulder,55,1,-8,7,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0057,June,monsoon,28,0,1,10,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0057,July,monsoon,43,-10,9,3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0057,August,monsoon,38,0,-7,1,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0057,September,monsoon,39,11,-1,4,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0057,October,post_monsoon,86,4,0,3,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0057,November,peak_winter,84,-3,2,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0057,December,peak_winter,91,4,-4,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0058,January,peak_winter,97,-4,-4,-3,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0058,February,peak_winter,81,8,-7,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0058,March,summer_shoulder,66,-4,-6,-3,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0058,April,summer_shoulder,83,6,1,10,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0058,May,summer_shoulder,77,0,-9,-1,low,Indicative summer shoulder suitability for religious site POIs.,high
+POI0058,June,monsoon,68,10,1,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0058,July,monsoon,79,-2,-14,6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0058,August,monsoon,63,-3,-12,-6,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0058,September,monsoon,82,-2,-5,-2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0058,October,post_monsoon,84,5,0,9,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0058,November,peak_winter,92,-6,0,-5,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0058,December,peak_winter,88,4,-7,12,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0059,January,peak_winter,94,8,-8,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0059,February,peak_winter,93,3,9,18,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0059,March,summer_shoulder,67,14,-7,13,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0059,April,summer_shoulder,85,-7,-1,-13,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0059,May,summer_shoulder,68,3,-15,8,low,Indicative summer shoulder suitability for cultural site POIs.,high
+POI0059,June,monsoon,78,7,-9,-2,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0059,July,monsoon,74,-7,-5,5,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0059,August,monsoon,76,-2,8,0,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0059,September,monsoon,62,-8,-4,14,medium,Indoor/covered activity; less affected by monsoon rain (estimated).,high
+POI0059,October,post_monsoon,70,9,-3,9,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0059,November,peak_winter,92,-4,4,19,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0059,December,peak_winter,91,3,4,10,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0060,January,peak_winter,92,3,-8,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0060,February,peak_winter,97,17,-2,0,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0060,March,summer_shoulder,59,-7,-8,14,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0060,April,summer_shoulder,69,0,-17,9,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0060,May,summer_shoulder,78,12,-9,13,medium,Warmer/humid conditions; outdoor midday activity may be less comfortable (estimated).,high
+POI0060,June,monsoon,44,14,-11,3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0060,July,monsoon,36,-6,-2,3,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0060,August,monsoon,38,-1,-4,5,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0060,September,monsoon,29,-4,-9,4,high,"Heavy rain typical; outdoor/coastal activity suitability reduced (estimated, not live weather data).",medium
+POI0060,October,post_monsoon,82,0,-3,7,low_to_medium,"Transitional month; generally improving conditions (estimated, not live weather data).",high
+POI0060,November,peak_winter,81,-5,-2,-1,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
+POI0060,December,peak_winter,96,13,0,6,low,"Peak tourist season; pleasant weather typically expected (estimated, not live weather data).",high
