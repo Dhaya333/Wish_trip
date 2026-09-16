@@ -18,7 +18,7 @@ from database.models import (
     Base, Hotel, LocalTravelTime, POI, Restaurant, SeasonalContext,
     TransportRoute, Zone,
 )
-from database.session import engine, SessionLocal
+import database.session as db_session
 
 RAW_DIR = os.path.join(os.path.dirname(__file__), "raw")
 
@@ -84,6 +84,12 @@ def load_seasonal_context(session: Session):
 
 
 def reset_and_seed():
+    # Read engine/SessionLocal from the module (not via a top-level
+    # `from ... import`) so callers -- e.g. the test suite -- can swap in a
+    # different engine/session at runtime before calling this function.
+    engine = db_session.engine
+    SessionLocal = db_session.SessionLocal
+
     Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
 
