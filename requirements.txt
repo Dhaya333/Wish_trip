@@ -5,9 +5,10 @@ sqlalchemy
 psycopg2-binary
 streamlit
 requests
-catboost
+joblib
 numpy
 pandas
 scikit-learn
 pytest
 python-dotenv
+
