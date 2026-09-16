@@ -10,8 +10,14 @@ A full MILP/exact solver is out of scope for this prototype; the greedy
 construction plus repair pass is a defensible, explainable approximation
 that still enforces every hard constraint in Section 18.
 """
+from planner.field_compat import (
+    get_accessibility_score, get_cost, get_duration, get_party_suitability,
+    get_period_score,
+)
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple
+
+from ml.schema_constants import poi_party_column
 
 PACE_TARGETS = {
     # (target activity count per day, max total activity minutes per day,
@@ -36,7 +42,7 @@ def _time_to_minutes(t: str) -> int:
 
 
 def _period_score(poi: Dict, period: str) -> int:
-    return poi.get(f"{period}_suitability", 50)
+    return get_period_score(poi, period)
 
 
 def _opening_hours_ok(poi: Dict, period: str) -> bool:
@@ -52,13 +58,13 @@ def _opening_hours_ok(poi: Dict, period: str) -> bool:
 class ScoredCandidate:
     poi: Dict
     ml_score: float
-    zone_id: int
+    zone_id: str
 
 
 @dataclass
 class DayResult:
     day_number: int
-    zone_focus_id: int
+    zone_focus_id: Optional[str]
     zone_focus_name: str
     scheduled: List[Dict] = field(default_factory=list)  # activity dicts w/ period/time/why
     travel_minutes: int = 0
@@ -68,9 +74,9 @@ class DayResult:
 
 def _party_ok(poi: Dict, traveller_type: str, mobility_need: str) -> bool:
     if mobility_need in ("reduced_walking", "wheelchair"):
-        if poi.get("accessibility_level") == "low":
+        if get_accessibility_score(poi) < 40:
             return False
-    suit = poi.get(f"{traveller_type}_suitability", 50)
+    suit = get_party_suitability(poi, traveller_type)
     return suit >= 25  # hard floor: don't ever schedule something clearly unsuitable for the party
 
 
@@ -81,10 +87,10 @@ def build_day_plans(
     traveller_type: str,
     mobility_need: str,
     per_day_soft_budget: Optional[float],
-    zone_name_lookup: Dict[int, str],
+    zone_name_lookup: Dict[str, str],
 ) -> Tuple[List[DayResult], List[str]]:
     """
-    Greedy day-by-day construction (Section 25 Day Construction steps 4-16):
+    Greedy day-by-day construction :
       - candidates are pre-scored by ML suitability
       - for each day/period, pick the highest (score - diversity_penalty)
         candidate that satisfies hard constraints and hasn't been used yet
@@ -110,7 +116,7 @@ def build_day_plans(
 
     for day_idx in range(n_days):
         day_categories = set()
-        day = DayResult(day_number=day_idx + 1, zone_focus_id=-1, zone_focus_name="")
+        day = DayResult(day_number=day_idx + 1, zone_focus_id=None, zone_focus_name="")
         minutes_used = 0
         count_used = 0
 
@@ -126,10 +132,10 @@ def build_day_plans(
                     continue  # duplicate prevention (Section 18.13)
                 if not _opening_hours_ok(c.poi, period):
                     continue  # opening-hours hard constraint (Section 18.4)
-                duration = c.poi.get("duration_minutes", 90)
+                duration = get_duration(c.poi)
                 if minutes_used + duration > pace_cfg["max_minutes"]:
                     continue
-                if per_day_soft_budget is not None and day.day_cost + c.poi.get("cost", 0) > per_day_soft_budget * 1.15:
+                if per_day_soft_budget is not None and day.day_cost + get_cost(c.poi) > per_day_soft_budget * 1.15:
                     continue  # soft budget guard per day, hard ceiling enforced at pipeline level
 
                 period_fit = _period_score(c.poi, period)
@@ -143,13 +149,11 @@ def build_day_plans(
             if best is None:
                 continue
 
-            duration = best.poi.get("duration_minutes", 90)
+            duration = get_duration(best.poi)
             window_start, _ = DAY_WINDOWS[period]
             assumption_notes = []
-            if best.poi.get("opening_hours_is_assumption"):
-                assumption_notes.append("Opening hours for this activity are an estimate, not verified live data.")
-            if best.poi.get("is_synthetic_or_estimated"):
-                assumption_notes.append("Cost/duration for this activity is indicative, not a verified live price.")
+            if not best.poi.get("opening_time"):
+                assumption_notes.append("Opening hours for this activity were not available; a default daytime window was assumed.")
 
             day.scheduled.append({
                 "poi": best.poi,
@@ -161,7 +165,7 @@ def build_day_plans(
             })
             used_poi_names.add(best.poi["name"])
             day_categories.add(best.poi["category"])
-            day.day_cost += best.poi.get("cost", 0)
+            day.day_cost += get_cost(best.poi)
             minutes_used += duration
             count_used += 1
             if day.zone_focus_id == -1:

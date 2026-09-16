@@ -1,6 +1,5 @@
 """
-Orchestrates the full planning pipeline end-to-end (Section 9 architecture,
-Section 25 day construction, Section 35 failure handling):
+Orchestrates the full planning pipeline end-to-end :
 
     Validate -> Retrieve candidates -> ML score -> Select hotel ->
     Optimise days -> Validate feasibility -> Generate explanations ->
@@ -57,7 +56,7 @@ def _pick_best_meal(restaurants: List[Dict], meal_type: str, dietary_preference:
             candidates = pref_matched
     if not candidates:
         return None
-    return min(candidates, key=lambda r: r["average_cost_per_person"])
+    return min(candidates, key=lambda r: r["average_meal_cost"])
 
 
 def run_planning_pipeline(req: TripRequest, session: Session) -> PlanResponse:
@@ -132,7 +131,7 @@ def run_planning_pipeline(req: TripRequest, session: Session) -> PlanResponse:
     # ---- Activities ----
     pois = get_pois(session, req.destination)
     poi_scores = score_pois(traveller, pois)
-    zone_lookup = {z["id"]: z["name"] for z in get_zones(session, req.destination)}
+    zone_lookup = {z["zone_id"]: z["zone_name"] for z in get_zones(session, req.destination)}
     scored_candidates = [ScoredCandidate(poi=p, ml_score=s, zone_id=p["zone_id"])
                           for p, s in zip(pois, poi_scores)]
 
@@ -164,21 +163,21 @@ def run_planning_pipeline(req: TripRequest, session: Session) -> PlanResponse:
             activity_items.append(ActivityItem(
                 name=poi["name"], category=poi["category"], period=sched["period"],
                 start_time=sched["start_time"], end_time=None,
-                duration_minutes=sched["duration_minutes"], cost=poi.get("cost", 0),
+                duration_minutes=sched["duration_minutes"], cost=poi.get("base_cost", 0),
                 zone=poi.get("zone_name", zone_lookup.get(poi.get("zone_id"), "")),
                 why_selected=explanation, assumptions=sched["assumptions"],
             ))
             activity_names_for_summary.append(poi["name"])
-            activities_total += poi.get("cost", 0)
+            activities_total += poi.get("base_cost", 0)
 
         lunch = _pick_best_meal(restaurants, "lunch", req.dietary_preference)
         dinner = _pick_best_meal(restaurants, "dinner", req.dietary_preference)
         meal_items = []
         for meal, meal_type in ((lunch, "lunch"), (dinner, "dinner")):
             if meal:
-                cost = meal["average_cost_per_person"] * party_size
+                cost = meal["average_meal_cost"] * party_size
                 meal_items.append(MealItem(name=meal["name"], meal_type=meal_type,
-                                            estimated_cost_per_person=meal["average_cost_per_person"],
+                                            estimated_cost_per_person=meal["average_meal_cost"],
                                             zone=meal["zone_name"]))
                 meals_total += cost
 

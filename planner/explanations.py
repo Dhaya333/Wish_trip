@@ -8,7 +8,7 @@ to actual planner data.
 """
 from typing import Dict, List
 
-from ml.synthetic_data import INTERESTS
+from ml.schema_constants import INTERESTS, hotel_party_column, poi_party_column
 
 TOP_N_INTERESTS = 2
 
@@ -17,7 +17,7 @@ def _top_matching_interests(preferences: Dict[str, int], poi: Dict) -> List[str]
     matches = []
     for interest in INTERESTS:
         pref_weight = preferences.get(interest, 0)
-        affinity = poi.get(f"affinity_{interest}", 0)
+        affinity = poi.get(f"{interest}_affinity", 0)
         if pref_weight >= 50 and affinity >= 50:
             matches.append((interest, pref_weight * affinity))
     matches.sort(key=lambda x: x[1], reverse=True)
@@ -33,15 +33,15 @@ def explain_activity(poi: Dict, preferences: Dict[str, int], period: str,
         joined = " and ".join(top_interests)
         reasons.append(f"strongly matches your {joined} preference")
 
-    period_fit = poi.get(f"{period}_suitability", 50)
+    period_fit = poi.get(f"{period}_score", 50)
     if period_fit >= 70:
         reasons.append(f"fits well in the {period}")
 
-    party_suit = poi.get(f"{traveller_type}_suitability", 50)
+    party_suit = poi.get(poi_party_column(traveller_type), 50)
     if party_suit >= 75:
         reasons.append(f"is well suited for a {traveller_type} trip")
 
-    if poi.get("cost", 0) == 0:
+    if poi.get("base_cost", 0) == 0:
         reasons.append("adds no extra activity cost")
 
     if not reasons:
@@ -53,7 +53,7 @@ def explain_activity(poi: Dict, preferences: Dict[str, int], period: str,
 def explain_hotel(hotel: Dict, comfort_level: str, traveller_type: str, budget_constrained: bool) -> str:
     reasons = [f"matches your requested {comfort_level} comfort level"]
 
-    party_suit = hotel.get(f"{traveller_type}_suitability", 50)
+    party_suit = hotel.get(hotel_party_column(traveller_type), 50)
     if party_suit >= 75:
         reasons.append(f"is well suited for a {traveller_type} trip")
 

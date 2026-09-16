@@ -7,11 +7,7 @@ from typing import Dict, List, Optional
 
 from pydantic import BaseModel, Field, field_validator
 
-INTERESTS = [
-    "food", "culture", "nature", "beaches", "wellness", "adventure",
-    "nightlife", "shopping", "history", "photography", "wildlife",
-    "spirituality",
-]
+from ml.schema_constants import INTERESTS
 
 
 class PreferenceWeights(BaseModel):
@@ -21,7 +17,7 @@ class PreferenceWeights(BaseModel):
     food: int = Field(50, ge=0, le=100)
     culture: int = Field(50, ge=0, le=100)
     nature: int = Field(50, ge=0, le=100)
-    beaches: int = Field(50, ge=0, le=100)
+    beach: int = Field(50, ge=0, le=100)
     wellness: int = Field(50, ge=0, le=100)
     adventure: int = Field(50, ge=0, le=100)
     nightlife: int = Field(50, ge=0, le=100)
