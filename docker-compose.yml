@@ -1,0 +1,57 @@
+# File path: wishtrip-goa-planner/docker-compose.yml
+#
+# Two services:
+#   db  -- PostgreSQL (as before)
+#   app -- the Python app itself (backend, ML training, tests), run
+#          inside Linux so Windows Smart App Control can never block a
+#          compiled package DLL (numpy/scipy/scikit-learn/etc.)
+#
+# Your project folder is mounted straight into the container (see
+# `volumes:` under app), so any file you edit on Windows is immediately
+# visible inside the container -- no rebuild needed for code changes,
+# only for requirements.txt changes.
+#
+# Usage:
+#   docker compose up -d --build         # start Postgres + app
+#   docker compose exec app bash         # get a shell inside the container
+#   docker compose down                  # stop everything
+#   docker compose down -v               # stop + delete the Postgres data volume
+
+services:
+  db:
+    image: postgres:16
+    container_name: wishtrip-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: wishtrip
+      POSTGRES_PASSWORD: wishtrip
+      POSTGRES_DB: wishtrip_goa
+    ports:
+      - "5432:5432"
+    volumes:
+      - wishtrip_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wishtrip -d wishtrip_goa"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: wishtrip-app
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg2://wishtrip:wishtrip@db:5432/wishtrip_goa
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    # keep the container alive for `docker compose exec` even if the
+    # default CMD (uvicorn) isn't what you want to run right now
+    tty: true
+
+volumes:
+  wishtrip_pgdata:
