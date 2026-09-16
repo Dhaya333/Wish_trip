@@ -1,129 +1,117 @@
 """
-SQLAlchemy ORM models implementing the data model described in
-MASTER_PROJECT.md Section 28 (Data Model).
+SQLAlchemy ORM models matching the real Goa dataset columns
+(data/raw/*.csv). Natural string IDs from the CSVs (Z01, POI0001, H0001,
+R0001) are used directly as primary keys so joins against the CSVs never
+need an id-remapping step.
 
-Every record that is not derived from verified public information carries
-an explicit `is_synthetic_or_estimated` / assumption flag, per Section 30
-(Data Quality Rules). Nothing here should be presented to the end user as
-a verified real-time fact.
+ml/raw/*.csv (travellers, poi_interactions, hotel_interactions) are NOT
+loaded into this database -- they're training data only, consumed
+directly by ml/build_training_data.py via pandas.
 """
-from datetime import datetime
-
-from sqlalchemy import (
-    Boolean, Column, DateTime, Float, ForeignKey, Integer, String, Text,
-)
+from sqlalchemy import Boolean, Column, Float, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base()
 
 
-class Destination(Base):
-    __tablename__ = "destinations"
-
-    id = Column(Integer, primary_key=True)
-    name = Column(String(120), nullable=False, unique=True)
-    state = Column(String(120), nullable=False)
-    country = Column(String(120), nullable=False, default="India")
-
-    zones = relationship("Zone", back_populates="destination")
-
-
 class Zone(Base):
     __tablename__ = "zones"
 
-    id = Column(Integer, primary_key=True)
-    destination_id = Column(Integer, ForeignKey("destinations.id"), nullable=False)
-    name = Column(String(120), nullable=False)
+    zone_id = Column(String(10), primary_key=True)       # e.g. "Z01"
+    zone_name = Column(String(120), nullable=False)
+    region = Column(String(120), nullable=False)
     latitude = Column(Float, nullable=False)
     longitude = Column(Float, nullable=False)
 
-    destination = relationship("Destination", back_populates="zones")
     pois = relationship("POI", back_populates="zone")
     hotels = relationship("Hotel", back_populates="zone")
     restaurants = relationship("Restaurant", back_populates="zone")
 
 
 class POI(Base):
-    """A point of interest / activity."""
     __tablename__ = "pois"
 
-    id = Column(Integer, primary_key=True)
-    zone_id = Column(Integer, ForeignKey("zones.id"), nullable=False)
+    poi_id = Column(String(12), primary_key=True)         
     name = Column(String(160), nullable=False)
+    zone_id = Column(String(10), ForeignKey("zones.zone_id"), nullable=False)
     category = Column(String(60), nullable=False)
-    description = Column(Text, default="")
 
     latitude = Column(Float, nullable=False)
     longitude = Column(Float, nullable=False)
-
-    duration_minutes = Column(Integer, nullable=False)
-    cost = Column(Float, nullable=False, default=0.0)
-
-    opening_time = Column(String(5), nullable=True)   # "HH:MM", None if unknown
+    typical_duration_minutes = Column(Integer, nullable=False)
+    opening_time = Column(String(5), nullable=True)
     closing_time = Column(String(5), nullable=True)
-    opening_hours_is_assumption = Column(Boolean, default=False)
 
-    seasonality_note = Column(String(200), default="")
-    accessibility_level = Column(String(20), default="unknown")  # low/medium/high
+    morning_score = Column(Integer, default=50)
+    afternoon_score = Column(Integer, default=50)
+    evening_score = Column(Integer, default=50)
 
-    family_suitability = Column(Integer, default=50)   # 0-100
-    senior_suitability = Column(Integer, default=50)
+    base_cost = Column(Float, default=0.0)
+    child_cost = Column(Float, default=0.0)
+    senior_cost = Column(Float, default=0.0)
+
     solo_suitability = Column(Integer, default=50)
     couple_suitability = Column(Integer, default=50)
+    family_suitability = Column(Integer, default=50)
     friends_suitability = Column(Integer, default=50)
+    senior_suitability = Column(Integer, default=50)
+    child_suitability = Column(Integer, default=50)
 
-    morning_suitability = Column(Integer, default=50)
-    afternoon_suitability = Column(Integer, default=50)
-    evening_suitability = Column(Integer, default=50)
+    accessibility_score = Column(Integer, default=50)
+    quality_score = Column(Float, default=50.0)
 
-    # Interest affinity fields (Section 8 taxonomy), 0-100 each
-    affinity_food = Column(Integer, default=0)
-    affinity_culture = Column(Integer, default=0)
-    affinity_nature = Column(Integer, default=0)
-    affinity_beaches = Column(Integer, default=0)
-    affinity_wellness = Column(Integer, default=0)
-    affinity_adventure = Column(Integer, default=0)
-    affinity_nightlife = Column(Integer, default=0)
-    affinity_shopping = Column(Integer, default=0)
-    affinity_history = Column(Integer, default=0)
-    affinity_photography = Column(Integer, default=0)
-    affinity_wildlife = Column(Integer, default=0)
-    affinity_spirituality = Column(Integer, default=0)
-
-    popularity_proxy = Column(Integer, default=50)  # 0-100, curated quality/popularity proxy
-
-    is_synthetic_or_estimated = Column(Boolean, default=False)
-    source_note = Column(String(200), default="curated public information")
+    food_affinity = Column(Integer, default=0)
+    culture_affinity = Column(Integer, default=0)
+    nature_affinity = Column(Integer, default=0)
+    beach_affinity = Column(Integer, default=0)
+    wellness_affinity = Column(Integer, default=0)
+    adventure_affinity = Column(Integer, default=0)
+    nightlife_affinity = Column(Integer, default=0)
+    shopping_affinity = Column(Integer, default=0)
+    history_affinity = Column(Integer, default=0)
+    photography_affinity = Column(Integer, default=0)
+    wildlife_affinity = Column(Integer, default=0)
+    spirituality_affinity = Column(Integer, default=0)
 
     zone = relationship("Zone", back_populates="pois")
+    seasonal_context = relationship("SeasonalContext", back_populates="poi")
 
 
 class Hotel(Base):
     __tablename__ = "hotels"
 
-    id = Column(Integer, primary_key=True)
-    zone_id = Column(Integer, ForeignKey("zones.id"), nullable=False)
+    hotel_id = Column(String(12), primary_key=True)       # e.g. "H0001"
     name = Column(String(160), nullable=False)
-    comfort_level = Column(String(20), nullable=False)  # budget/standard/premium/luxury
+    zone_id = Column(String(10), ForeignKey("zones.zone_id"), nullable=False)
+    comfort_level = Column(String(20), nullable=False)    # budget/standard/premium/luxury
+    star_category = Column(Integer, default=3)
+    quality_score = Column(Float, default=50.0)
 
     price_per_night = Column(Float, nullable=False)
     room_capacity = Column(Integer, default=2)
-    amenities = Column(String(300), default="")
+    estimated_extra_guest_cost = Column(Float, default=0.0)
 
-    accessibility_level = Column(String(20), default="unknown")
-    family_suitability = Column(Integer, default=50)
-    senior_suitability = Column(Integer, default=50)
-    solo_suitability = Column(Integer, default=50)
-    couple_suitability = Column(Integer, default=50)
-    friends_suitability = Column(Integer, default=50)
+    solo_score = Column(Integer, default=50)
+    couple_score = Column(Integer, default=50)
+    family_score = Column(Integer, default=50)
+    friends_score = Column(Integer, default=50)
+    senior_score = Column(Integer, default=50)
+    child_score = Column(Integer, default=50)
+    accessibility_score = Column(Integer, default=50)
+
+    breakfast = Column(Boolean, default=False)
+    pool = Column(Boolean, default=False)
+    parking = Column(Boolean, default=False)
+    beach_access = Column(Boolean, default=False)
+    family_facilities = Column(Boolean, default=False)
+    wellness = Column(Boolean, default=False)
+    restaurant = Column(Boolean, default=False)
+    wifi = Column(Boolean, default=False)
 
     latitude = Column(Float, nullable=False)
     longitude = Column(Float, nullable=False)
-
-    popularity_proxy = Column(Integer, default=50)
-
-    is_synthetic_or_estimated = Column(Boolean, default=True)
-    source_note = Column(String(200), default="indicative/estimated price")
+    distance_to_major_poi_clusters_km = Column(Float, default=0.0)
+    average_access_travel_time_min = Column(Float, default=0.0)
 
     zone = relationship("Zone", back_populates="hotels")
 
@@ -131,81 +119,72 @@ class Hotel(Base):
 class Restaurant(Base):
     __tablename__ = "restaurants"
 
-    id = Column(Integer, primary_key=True)
-    zone_id = Column(Integer, ForeignKey("zones.id"), nullable=False)
+    restaurant_id = Column(String(12), primary_key=True)  # e.g. "R0001"
     name = Column(String(160), nullable=False)
+    zone_id = Column(String(10), ForeignKey("zones.zone_id"), nullable=False)
     cuisine = Column(String(120), default="")
-    meal_types = Column(String(60), default="lunch,dinner")  # comma separated
-    dietary_support = Column(String(120), default="non_vegetarian,vegetarian")
+    meal_types = Column(String(60), default="")           # e.g. "breakfast;lunch;dinner"
+    dietary_support = Column(String(60), default="")       # e.g. "veg_and_non_veg"
+    price_level = Column(String(20), default="mid")
+    average_meal_cost = Column(Float, nullable=False)
 
-    price_level = Column(String(20), default="mid")  # low/mid/high
-    average_cost_per_person = Column(Float, nullable=False)
-
-    opening_time = Column(String(5), default="11:00")
-    closing_time = Column(String(5), default="23:00")
+    breakfast_support = Column(Boolean, default=False)
+    lunch_support = Column(Boolean, default=False)
+    dinner_support = Column(Boolean, default=False)
+    opening_period = Column(String(20), default="")        # e.g. "07:00-23:00"
 
     latitude = Column(Float, nullable=False)
     longitude = Column(Float, nullable=False)
-    suitable_party_types = Column(String(120), default="solo,couple,family,friends,seniors")
-
-    is_synthetic_or_estimated = Column(Boolean, default=True)
 
     zone = relationship("Zone", back_populates="restaurants")
 
 
-class TransportRoute(Base):
-    """Intercity transport, origin city -> destination (and return)."""
-    __tablename__ = "transport_routes"
-
-    id = Column(Integer, primary_key=True)
-    origin_city = Column(String(120), nullable=False)
-    destination_city = Column(String(120), nullable=False)
-    mode = Column(String(20), nullable=False)  # flight/train/bus/car
-
-    departure_window = Column(String(40), default="")
-    arrival_window = Column(String(40), default="")
-    duration_minutes = Column(Integer, nullable=False)
-    estimated_cost_per_person = Column(Float, nullable=False)
-    transfers = Column(Integer, default=0)
-    comfort_level = Column(String(20), default="standard")
-    party_capacity_assumption = Column(String(120), default="")
-
-    is_indicative = Column(Boolean, default=True)
-
-
 class LocalTravelTime(Base):
-    """Zone-to-zone local travel time/cost matrix within the destination."""
     __tablename__ = "local_travel_times"
 
-    id = Column(Integer, primary_key=True)
-    origin_zone_id = Column(Integer, ForeignKey("zones.id"), nullable=False)
-    destination_zone_id = Column(Integer, ForeignKey("zones.id"), nullable=False)
-    mode = Column(String(20), nullable=False, default="taxi")
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    origin_zone = Column(String(10), ForeignKey("zones.zone_id"), nullable=False)
+    destination_zone = Column(String(10), ForeignKey("zones.zone_id"), nullable=False)
+    mode = Column(String(20), nullable=False)              # walking/scooter/taxi/...
 
     distance_km = Column(Float, nullable=False)
-    duration_minutes = Column(Integer, nullable=False)
+    duration_minutes = Column(Float, nullable=False)
     estimated_cost = Column(Float, nullable=False)
-
-    is_indicative = Column(Boolean, default=True)
-
-
-class SeasonContext(Base):
-    __tablename__ = "season_context"
-
-    id = Column(Integer, primary_key=True)
-    month = Column(Integer, nullable=False)  # 1-12
-    poi_id = Column(Integer, ForeignKey("pois.id"), nullable=False)
-    suitability_modifier = Column(Integer, default=0)  # -100..+100
-    context_note = Column(String(200), default="")
-    confidence = Column(String(20), default="low")  # low/medium/high
+    comfort = Column(Integer, default=50)
+    accessibility = Column(Integer, default=50)
 
 
-class PlanRequestLog(Base):
-    """Optional persisted record of a planning request/response for audit."""
-    __tablename__ = "plan_request_log"
+class TransportRoute(Base):
+    __tablename__ = "transport_routes"
 
-    id = Column(Integer, primary_key=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
-    request_json = Column(Text, nullable=False)
-    response_json = Column(Text, nullable=False)
-    feasible = Column(Boolean, default=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    origin_city = Column(String(120), nullable=False)
+    destination = Column(String(120), nullable=False)
+    mode = Column(String(20), nullable=False)              # flight/train/bus
+
+    departure_window = Column(String(20), default="")      # morning/evening/...
+    arrival_window = Column(String(20), default="")
+    duration_minutes = Column(Float, nullable=False)
+    estimated_cost_per_person = Column(Float, nullable=False)
+    transfer_count = Column(Integer, default=0)
+    comfort_score = Column(Integer, default=50)
+    availability_status_type = Column(String(20), default="")   # limited/seasonal/frequent
+    source_status = Column(String(30), default="synthetic_indicative")
+
+
+class SeasonalContext(Base):
+    __tablename__ = "seasonal_context"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    poi_id = Column(String(12), ForeignKey("pois.poi_id"), nullable=False)
+    month = Column(String(20), nullable=False)
+    season = Column(String(30), nullable=False)
+    seasonal_suitability = Column(Integer, default=50)
+    morning_modifier = Column(Integer, default=0)
+    afternoon_modifier = Column(Integer, default=0)
+    evening_modifier = Column(Integer, default=0)
+    weather_risk_proxy = Column(String(20), default="low")
+    season_note = Column(Text, default="")
+    confidence = Column(String(20), default="low")
+
+    poi = relationship("POI", back_populates="seasonal_context")
