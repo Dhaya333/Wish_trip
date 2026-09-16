@@ -1,11 +1,4 @@
 """
-Streamlit frontend (Section 10 -- Streamlit responsibilities: collect
-inputs, render interactive preference bars, show validation errors, send
-structured request to FastAPI, display itinerary/costs/assumptions/why).
-
-Contains NO planning logic itself -- everything is delegated to the
-FastAPI backend's POST /plan endpoint.
-
 Run with:
     streamlit run frontend/app.py
 """
@@ -24,14 +17,14 @@ INTERESTS = [
 ]
 
 st.set_page_config(page_title="Wishtrip Goa Planner", layout="wide")
-st.title("🌴 Goa Trip Planner")
-st.caption("ML suitability ranking + constraint-aware optimisation -- no LLM is used to generate this plan.")
+st.title("Wishtrip Goa Trip Planner")
+st.caption("Developed by Udhaya A")
 
 # ---------------------------------------------------------------- Step 1
-st.header("1. Trip Basics")
+st.header("1. Trip Location & Dates")
 col1, col2, col3 = st.columns(3)
 with col1:
-    origin_city = st.text_input("Origin city", "Mumbai")
+    origin_city = st.text_input("Origin city", "Chennai")
     destination = st.text_input("Destination", "Goa", disabled=True)
 with col2:
     start_date = st.date_input("Travel start date", date.today() + timedelta(days=30))
@@ -51,7 +44,7 @@ with col1:
     traveller_type = st.selectbox("Traveller type", ["solo", "couple", "family", "friends", "seniors"])
 with col2:
     c1, c2, c3 = st.columns(3)
-    adults = c1.number_input("Adults", min_value=1, value=2)
+    adults = c1.number_input("Adults", min_value=1, value=1)
     children = c2.number_input("Children", min_value=0, value=0)
     seniors = c3.number_input("Seniors", min_value=0, value=0)
 
@@ -62,7 +55,7 @@ preferences = {}
 cols = st.columns(3)
 for i, interest in enumerate(INTERESTS):
     with cols[i % 3]:
-        preferences[interest] = st.slider(interest.capitalize(), 0, 100, 50)
+        preferences[interest] = st.slider(interest.capitalize(), 0, 100, 0)
 
 # ---------------------------------------------------------------- Pace / Budget / Comfort
 st.header("4. Pace, Budget & Comfort")
@@ -83,7 +76,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     dietary_preference = st.selectbox(
         "Dietary preference",
-        ["no_preference", "vegetarian", "vegan", "jain", "non_vegetarian"])
+        ["no_preference", "vegetarian", "vegan", "non_vegetarian"])
 with col2:
     mobility_need = st.selectbox("Mobility needs", ["none", "reduced_walking", "wheelchair"])
 with col3:
