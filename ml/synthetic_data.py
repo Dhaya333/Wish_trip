@@ -14,11 +14,7 @@ import random
 from dataclasses import dataclass, field
 from typing import Dict, List
 
-INTERESTS = [
-    "food", "culture", "nature", "beaches", "wellness", "adventure",
-    "nightlife", "shopping", "history", "photography", "wildlife",
-    "spirituality",
-]
+from ml.schema_constants import INTERESTS, hotel_party_column, poi_party_column
 TRAVELLER_TYPES = ["solo", "couple", "family", "friends", "seniors"]
 PACES = ["easy_going", "balanced", "packed"]
 
@@ -58,8 +54,8 @@ def preference_match_score(profile: SyntheticProfile, poi_affinities: Dict[str, 
     return min(100.0, matched / total_weight)
 
 
-def party_suitability_score(profile: SyntheticProfile, item: dict) -> float:
-    key = f"{profile.traveller_type}_suitability"
+def party_suitability_score(profile: SyntheticProfile, item: dict, is_hotel: bool = False) -> float:
+    key = hotel_party_column(profile.traveller_type) if is_hotel else poi_party_column(profile.traveller_type)
     return float(item.get(key, 50))
 
 
@@ -110,9 +106,9 @@ def utility_score(profile: SyntheticProfile, item: dict, is_hotel: bool = False,
     formula (Section 14).
     """
     rng = rng or random
-    affinities = {i: item.get(f"affinity_{i}", 0) for i in INTERESTS} if not is_hotel else {}
+    affinities = {i: item.get(f"{i}_affinity", 0) for i in INTERESTS} if not is_hotel else {}
     pref_match = preference_match_score(profile, affinities) if not is_hotel else 60.0
-    party = party_suitability_score(profile, item)
+    party = party_suitability_score(profile, item, is_hotel=is_hotel)
     pace = pace_compatibility_score(profile, item) if not is_hotel else 100.0
     budget = budget_compatibility_score(profile, item)
     accessibility = accessibility_compatibility_score(profile, item)
@@ -160,10 +156,10 @@ def generate_training_rows(items: List[dict], n_profiles: int = 400, is_hotel: b
                 "item_duration": item.get("duration_minutes", 0),
                 "item_popularity": item.get("popularity_proxy", 50),
                 "item_accessibility": item.get("accessibility_level", "unknown"),
-                "item_party_suit": item.get(f"{profile.traveller_type}_suitability", 50),
+                "item_party_suit": item.get(hotel_party_column(profile.traveller_type) if is_hotel else poi_party_column(profile.traveller_type), 50),
                 "label_suitability": round(label, 2),
             }
             if not is_hotel:
-                row.update({f"affinity_{i}": item.get(f"affinity_{i}", 0) for i in INTERESTS})
+                row.update({f"{i}_affinity": item.get(f"{i}_affinity", 0) for i in INTERESTS})
             rows.append(row)
     return rows

@@ -155,7 +155,12 @@ def _build_inference_row(traveller: dict, item: dict, is_hotel: bool) -> Dict:
             "poi_id": item.get("poi_id"),
             "category": item.get("category"),
             "time_period": item.get("time_period", ""),
-            "hotel_zone": item.get("zone_id", ""),
+            # NOTE: "hotel_zone" in the training data is the zone of the
+            # traveller's HOTEL (context), not the POI's own zone -- we
+            # don't know that yet at this scoring step (hotel selection
+            # happens once, POIs are scored independent of it), so we
+            # deliberately leave it unset and let it fall back to
+            # "unknown" rather than silently feeding in the wrong zone.
             "typical_duration_minutes": item.get("typical_duration_minutes"),
             "accessibility_score": item.get("accessibility_score"),
             "quality_score": item.get("quality_score"),
