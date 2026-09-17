@@ -188,7 +188,7 @@ def run_planning_pipeline(req: TripRequest, session: Session) -> PlanResponse:
         days.append(DayPlan(
             day_number=day.day_number,
             date=req.start_date if idx == 0 else req.start_date.fromordinal(req.start_date.toordinal() + idx),
-            zone_focus=day.zone_focus_name or "Unassigned",
+            zone_focus=day.zone_focus_name,
             activities=activity_items,
             meals=meal_items,
             travel_time_minutes=travel_minutes,
