@@ -3,7 +3,7 @@ Run with:
     streamlit run frontend/app.py
 """
 import os
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 
 import requests
 import streamlit as st
@@ -142,7 +142,8 @@ if st.button("Plan my trip", type="primary", disabled=nights < 1):
     # -------------------------------------------------------- Days
     for day in plan.get("days", []):
         zone_suffix = f" ({day['zone_focus']})" if day.get("zone_focus") else ""
-        st.header(f"Day {day['day_number']} — {day['date']} {zone_suffix}")
+        display_date = datetime.strptime(day["date"], "%Y-%m-%d").strftime("%d-%m-%Y")
+        st.header(f"Day {day['day_number']} — {display_date}{zone_suffix}")
         st.write(day["day_summary"])
         for act in day["activities"]:
             with st.expander(f"{act['period'].title()}: {act['name']} ({act['duration_minutes']} min)"):
