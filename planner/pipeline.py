@@ -170,10 +170,11 @@ def run_planning_pipeline(req: TripRequest, session: Session) -> PlanResponse:
             activity_names_for_summary.append(poi["name"])
             activities_total += poi.get("base_cost", 0)
 
+        breakfast = _pick_best_meal(restaurants, "breakfast", req.dietary_preference)
         lunch = _pick_best_meal(restaurants, "lunch", req.dietary_preference)
         dinner = _pick_best_meal(restaurants, "dinner", req.dietary_preference)
         meal_items = []
-        for meal, meal_type in ((lunch, "lunch"), (dinner, "dinner")):
+        for meal, meal_type in ((breakfast, "breakfast"), (lunch, "lunch"), (dinner, "dinner")):
             if meal:
                 cost = meal["average_meal_cost"] * party_size
                 meal_items.append(MealItem(name=meal["name"], meal_type=meal_type,
