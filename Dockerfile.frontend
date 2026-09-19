@@ -1,0 +1,27 @@
+# Separate Dockerfile for the Streamlit frontend, so it can be deployed as
+# its own Render (or other) web service independently from the FastAPI
+# backend (which uses the plain `Dockerfile`) -- both build from the same
+# repo, just with different Dockerfile paths and different start commands.
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+# Render (and most PaaS platforms) inject the port to bind to via $PORT --
+# Streamlit must listen on 0.0.0.0 and that exact port, not a hardcoded one.
+EXPOSE 8501
+
+CMD streamlit run frontend/app.py \
+    --server.port ${PORT:-8501} \
+    --server.address 0.0.0.0 \
+    --server.headless true \
+    --browser.gatherUsageStats false
